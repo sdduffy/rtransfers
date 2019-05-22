@@ -1,0 +1,17 @@
+Package: rtransfers
+Type: Package
+Title: Tool for Calling Journal Transfers API
+Version: 0.1.0
+Author: Sean Duffy
+Maintainer: The package maintainer <sean.duffy164@gmail.com>
+Description: Simple function for calling the Journal Transfer API within R
+    The current iteration of this package has 1 simple function, rtransfers, which appends
+    a query string to the API BaseURL and return the results. There are roughly 23 different 
+    index labels for the Journal Transfer API. For example, if you wanted to just check receiving publisher
+    you would call "rpn: Springer" with the function. However, if you wanted to check Springer for transfers that
+    became effective on January 1, 2019. You would call "rpn: Springer AND etd: 2019-01-01". The plan is to
+    update this and make it more user friendly going forward. The full list of Index Mnemonics can be found
+    here: https://journaltransfer.issn.org/api
+License: MIT LICENSE
+Encoding: UTF-8
+LazyData: true
